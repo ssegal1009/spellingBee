@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spelling Bee Hints!</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Spelling Bee Pangram Hints!</h1>
+        <p>Enter the letters of today's bee:</p>
+        <input type="text" id="bee" placeholder="e.g., abcdefg" maxlength="7">
+        <button onclick="getHint1()">Get First Letter</button>
+        <button onclick="getHint2()">Is it a compound?</button>
+        <button onclick="getHint3()">Get Letter Count</button>
+
+
+        <div id="hint"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script  src="static/script.js"></script>
+
+</body>
+</html>
