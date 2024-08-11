@@ -1,23 +1,70 @@
-body {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: 900;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+.header-img{
+    margin: .1px;
 }
+
+
+.main-title {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #f8cd0d;
+    text-shadow: 
+        1px 1px 0 #000,  
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000;
+    font-weight: 900;
+}
+
+.sub-title{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #e67300;
+
+}
+
+
+
 .container {
     text-align: center;
-    border: 5px solid #fffc3a;
+    border: 10px dashed #f8cd0d;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: 150px 450px 100px 450px;
+
 }
-input, button {
+
+.hint-button{
+    margin-top: 20px;
+    color:#e1b800;
+    padding:13px 2px 13px 2px;
+    font-family:monospace;
+    display: block;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(255, 244, 211);
+    border-color:#eaac00;
+
+
+
+}
+
+.hint-button:hover {
+    background-color: #f8cd0d;
+    color: white;
+
+}
+
+
+
+.bee-input {
     margin-top: 20px;
     padding: 13px;
     font-family: nyt-franklin;
+    color:deepskyblue;
     font-size: 16px;
     display: block;
     width: 80%;
@@ -27,5 +74,8 @@ input, button {
 #hint {
     margin-top: 20px;
     font-size: 18px;
+    font-family: monospace;
     color:chocolate;
 }
+
+
