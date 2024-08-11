@@ -8,17 +8,28 @@
 </head>
 <body>
     <div class="container">
-        <a href="https://www.nytimes.com/puzzles/spelling-bee">
-        <img src="static/bee.jpg" width="75" height="75"></a>
-        <h1>Spelling Bee Pangram Hints!</h1>
-        <p>Enter the letters of today's bee in lowercase:</p>
-        <input type="text" id="bee" placeholder="e.g., abcdefg" maxlength="7">
-        <button onclick="getHint1()">Get First Letter</button>
-        <button onclick="getHint2()">Is it a compound?</button>
-        <button onclick="getHint3()">Get Letter Count</button>
 
-
-        <div id="hint"></div>
+        <main class="main-content">
+        <!-- img header w link to actual bee -->
+            <header class="header">
+                <a href="https://www.nytimes.com/puzzles/spelling-bee">
+                    <img src="static/bee.jpg" alt="NYT BEE" class="header-img" width="75" height="75">
+                </a>
+            </header>
+            <div class="titles">
+                <h1 class="main-title">Spelling Bee Pangram Hints!</h1>
+                <p class="sub-title">Enter the letters of today's bee in lowercase:</p>
+            </div>
+            <div class="input-section">
+                <input type="text" id="bee" class="bee-input" placeholder="e.g., abcdefg" maxlength="7">
+                <div class="buttons">
+                    <button class="hint-button" onclick="getHint1()">FIRST LETTER</button>
+                    <button class="hint-button" onclick="getHint2()">COMPOUND WORD?</button>
+                    <button class="hint-button" onclick="getHint3()">LETTER COUNT</button>
+                </div>
+            </div>
+            <div id="hint" class="hint"></div>
+        </main>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script  src="static/script.js"></script>
