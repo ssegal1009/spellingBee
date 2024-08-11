@@ -32,8 +32,10 @@
     justify-content: center;
     align-items: center;
     margin: 10% 20%;
+    background-color:white;
 
 }
+
 
 .hint-button{
     margin-top: 20px;
