@@ -160,6 +160,7 @@ def get_letterCount():
     hint = letterCount(final)  # Generate the hint based on the pangrams
     return jsonify({"hint": hint})
 
+import os
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
