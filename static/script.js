@@ -4,6 +4,16 @@
  */
 
 
+document.getElementById("bee").addEventListener("input", function() {
+    let input = this.value;//gets text input live
+    input = input.replace(/[^a-z]/gi, '').toLowerCase();//replaces any numbers entered, special characters, or cap letters with ''
+    this.value = input;//cleans final val
+
+});
+
+
+
+
 /**
  * The getHint1 function performs the following steps:
 
