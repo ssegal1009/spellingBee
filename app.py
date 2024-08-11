@@ -12,7 +12,7 @@ from openai import OpenAI
 app = Flask(__name__) 
 
 
-client = OpenAI() #my API key is an env variable on my terminal
+client = OpenAI() 
 
 #accessing words from NLTK
 english_words = set(words.words()) #using set instead to optimize lookup time
