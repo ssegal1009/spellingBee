@@ -1,5 +1,5 @@
 # Author: Sofia Segal
-# Version: 8.9.24
+# Version: 8.11.24
 #Flask script -- all the Python logic/OpenAI API implementation is in this script. Routes at the end to script.js
 
 from flask import Flask, render_template, jsonify, request, url_for
@@ -74,7 +74,13 @@ def letterCount(pangram):
             letterCount[letter] += 1
         else:
             letterCount[letter] = 1
-    return str(letterCount)
+    answer = " "
+    for letter, count in letterCount.items():
+        if answer: 
+            answer += "   "
+            answer +=  letter + " : " + str(count) + ","
+
+    return answer[:-1]
 
 
 def firstLetter(pangram):
