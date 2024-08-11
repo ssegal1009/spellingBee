@@ -20,6 +20,14 @@
 
 }
 
+.git-img{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width:20%;
+    margin: 10px;
+    height:auto;
+}
 
 
 .container {
