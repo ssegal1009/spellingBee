@@ -105,7 +105,7 @@ def offerWord(pangramString):
         messages=[
             {"role": "system", "content": "You are an english expert."}, #lol
             {"role": "user", "content": "Out of these words, which is the most popular? " + pangramString + 
-             "Just respond with the more popular word. Your response should only be one word, and have no special characters in it. It should be all lowercase. If there are no words, return 'There is no pangram'. "} #pangramString ensured to be a string of pangrams separated by commas
+             "Respond with the more popular word from the list of words provided. Do not change or alter any word. What you return must originate from the list given. If there is only one word, return that word. Your response must be ll lowercase with no special characters."} #pangramString ensured to be a string of pangrams separated by commas
         ]
         )
         message = completion.choices[0].message.content #accesses just the message content, not the role of the chat completion (OpenAI API's documentation)
